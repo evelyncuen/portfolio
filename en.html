@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+    <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+    
+    <title>Portfolio</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <div class="nav-left open-sans-extrabold">
+            <a href="index.html"><i class="fa-solid fa-earth-americas"></i> Español</a>
+        </div>
+        <div class="nav-right open-sans-extrabold" >
+            <a href="#about" >About me</a>
+            <a href="#works">Works</a>
+        </div>
+    </div>
+
+     <div class="header">
+        <div class="header-content">
+            <div class="profile">
+                <img src="media/foto-evelyn.jpg" alt="Foto de Evelyn Cuen">
+            </div>
+            <h1 class="open-sans-extrabold">Evelyn Cuen</h1>
+            <h2 class="pt-sans-regular">Digital Designer</h2>
+        </div>
+    </div>
+
+     <div class="main">
+        <div class="reel-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FRp6DeSrb9U?si=yLtKFyQz5HSJTi8I" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <hr class="separator" id="works">
+        
+        <div class="bar">
+          <button onclick="mostrarContenido('contenido1', this)">Animation</button>
+          <button onclick="mostrarContenido('contenido2', this)">Video games</button>
+          <button onclick="mostrarContenido('contenido3', this)">Others</button>
+        </div>
+        <div class="section" id="main-section">
+            <div id="contenido1">
+                <h2 class="open-sans-extrabold">Inmersive experience "Viaje al Mictlán"</h2>
+                <p class="pt-sans-regular">
+                Participation in the design and animation of an immersive experience narrating the journey through the 7 levels of Mictlán (the Mexica underworld), projected
+                for the Day of the Dead celebration at Centro Cultural de las Fronteras, UACJ.
+                </p>
+                <div class="images-block">
+                  <div class="images">
+                    <img src="media/Animacion 1-2.png" onclick="abrirModal(this)">
+                    <img src="media/Animacion 1-3.png" onclick="abrirModal(this)">
+                    <img src="media/Animacion 1-3.jpeg" onclick="abrirModal(this)">
+                  </div>
+                </div>
+                <h2 class="open-sans-extrabold">Inmersive experience "Do de pecho"</h2>
+                <p class="pt-sans-regular">
+                Participation in the planning, design, and animation of an immersive experience created as a tribute to the Mexican artist Juan Gabriel, representing his
+                origins, the Bellas Artes concert, his achievements, and his influence on other artists. Projected at Centro Cultural de las Fronteras, UACJ.
+                </p>
+                <div class="images-block">
+                  <div class="images" id="img-dopecho">
+                    <img src="media/Animacion 2-1.png" onclick="abrirModal(this)">
+                    <img src="media/Animacion 2-2.png" onclick="abrirModal(this)">
+                  </div>
+                </div>
+                <h2 class="open-sans-extrabold">"The infinity"</h2>
+                <p class="pt-sans-regular">
+                Animated short film for the final project in the 2D Animation class. In sync with the song "Infinity" by Yuuri, it shows a girl meeting a dog and deciding to make it her 
+                lifelong companion.
+                </p>
+                <div class="images-block">
+                  <div class="images">
+                    <img src="media/Animacion 3-1.png" onclick="abrirModal(this)">
+                    <img src="media/Animacion 3-2.png" onclick="abrirModal(this)">
+                    <img src="media/Animacion 3-3.png" onclick="abrirModal(this)">
+                  </div>
+                </div>
+                <h2 class="open-sans-extrabold">The Fox vs. The Ball</h2>
+                <p class="pt-sans-regular">
+                Animated short film created for the 3D Animation class. It plays with movements and camera angles to depict a comedic conflict between a little fox and a
+                ball that accidentally falls on him.
+                </p>
+                <div class="images-block">
+                  <div class="images">
+                    <img src="media/Animacion 4-1.png" onclick="abrirModal(this)">
+                    <img src="media/Animacion 4-2.png" onclick="abrirModal(this)">
+                    <img src="media/Animacion 4-3.png" onclick="abrirModal(this)">
+                  </div>
+                </div>
+                <h2 class="open-sans-extrabold">Motion Graphics</h2>
+                <p class="pt-sans-regular">
+                Throughout my career, I have acquired skills in animating motion graphics, including texts, images, shapes, and special effects,
+                used in various contexts such as projections, videos, among others.
+                </p>
+                <div class="images-block">
+                  <div class="images">
+                    <img src="media/Animacion 6-1 comp.gif" onclick="abrirModal(this)">
+                    <img src="media/Animacion 6-2 comp.gif" onclick="abrirModal(this)">
+                    <img src="media/Animacion 6-comp.gif" onclick="abrirModal(this)">
+                  </div>
+                </div>
+            </div>
+
+            <div id="contenido2">
+                <h2 class="open-sans-extrabold">La odisea de Eloise</h2>
+                <h3 class="open-sans-extrabold">Platform: PC</h3>
+                <p class="pt-sans-regular">
+                Serious game to raise awareness about accessibility measures for people with color blindness in video games. The story follows Eloise, a game developer,
+                and her pet, Kiwi, who guides her through different scenarios while they learn interactively. <br>
+                Access it <a href="https://vendy2002.itch.io/la-odisea-de-eloise">here</a> to try it.
+                </p>
+                <div class="images-block">
+                  <div class="images">
+                    <img src="media/Videojuegos 1-1.png" onclick="abrirModal(this)">
+                    <img src="media/Videojuegos 1-2.png" onclick="abrirModal(this)">
+                    <img src="media/Videojuegos 1-3.png" onclick="abrirModal(this)">
+                  </div>
+                </div>
+                <h2 class="open-sans-extrabold">Dream Room Decor</h2>
+                <h3 class="open-sans-extrabold">Platform: Mobile phones</h3>
+                <p class="pt-sans-regular">
+                Casual and relaxing mobile game that consists of arranging a room with a wide variety of furniture. Earn more points by grouping more
+                items from the same collection. <br>
+                Access it <a href="https://vendy2002.itch.io/dream-room-decor">here</a> to try it.
+                </p>
+                <div class="images-block">
+                  <div class="images" id="img-roomdecor">
+                    <img src="media/Videojuegos 2-1.jpg" onclick="abrirModal(this)">
+                    <img src="media/Videojuegos 2-2.jpg" onclick="abrirModal(this)">
+                    <img src="media/Videojuegos 2-3.jpg" onclick="abrirModal(this)">
+                  </div>
+                </div>
+                <h2 class="open-sans-extrabold">WorkZen</h2>
+                <h3 class="open-sans-extrabold">Platform: Meta Quest (VR)</h3>
+                <p class="pt-sans-regular">
+                Video game developed to be played in virtual reality with the intention of promoting a balance between hard work and rest or relaxation.
+                </p>
+                <div class="images-block">
+                  <div class="images">
+                    <img src="media/Videojuegos 3-1.png" onclick="abrirModal(this)">
+                    <img src="media/Videojuegos 3-2.png" onclick="abrirModal(this)">
+                    <img src="media/Videojuegos 3-3.png" onclick="abrirModal(this)">
+                  </div>
+                </div>
+                <h2 class="open-sans-extrabold">Vladimir's Forest Maze</h2>
+                <h3 class="open-sans-extrabold">Plataforma: PC</h3>
+                <p class="pt-sans-regular">
+                3D video game with three levels that explores different puzzle mechanics and challenges through the protagonist's journey to get through a forest.
+                </p>
+                <div class="images-block">
+                  <div class="images">
+                    <img src="media/Videojuegos 4-1.png" onclick="abrirModal(this)">
+                    <img src="media/Videojuegos 4-2.png" onclick="abrirModal(this)">
+                    <img src="media/Videojuegos 4-3.png" onclick="abrirModal(this)">
+                  </div>
+                </div>
+            </div>
+
+            <div id="contenido3">
+                <h2 class="open-sans-extrabold">Web design and development</h2>
+                <p class="pt-sans-regular">
+                Experience in creating responsive websites from scratch, mainly using HTML, CSS, and JavaScript, with or without the use of frameworks. Capable of 
+                integrating databases with SQL, PHP or APIs, and newsletter services.
+                </p>
+                <div class="images-block">
+                  <div class="images" id="img-web">
+                    <img src="media/web-0.png" onclick="abrirModal(this)">
+                    <img src="media/web-1.png" onclick="abrirModal(this)">
+                    <img src="media/web-2.png" onclick="abrirModal(this)">
+                  </div>
+                </div>
+                <h2 class="open-sans-extrabold">3D Modeling</h2>
+                <p class="pt-sans-regular">
+                Knowledge of best practices in 3D modeling, texturing, and animation, with experience in software such as Blender and Autodesk MAYA for modeling, and the 
+                ability to implement models in video games, virtual reality, and augmented reality.
+                </p>
+                <div class="images-block">
+                  <div class="images">
+                    <img src="media/render-1.png" onclick="abrirModal(this)">
+                    <img src="media/render-2.jpg" onclick="abrirModal(this)">
+                    <img src="media/render-3.jpg" onclick="abrirModal(this)">
+                  </div>
+                </div>
+                <h2 class="open-sans-extrabold">Digital Illustration</h2>
+                <p class="pt-sans-regular">
+                Passion for illustration and coloring in digital media, especially of people, with knowledge but always striving to improve in technique, anatomy,
+                color theory, composition, perspective, lighting, and rendering.
+                </p>
+                <div class="images-block">
+                  <div class="images" id="img-drawings">
+                    <img src="media/dibujo-1.png" onclick="abrirModal(this)">
+                    <img src="media/dibujo-2.png" onclick="abrirModal(this)">
+                    <img src="media/dibujo-3.png" onclick="abrirModal(this)">
+                    <img src="media/dibujo-4.png" onclick="abrirModal(this)">
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal" class="modal" onclick="cerrarModal()">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="imgModal">
+        </div>
+
+        <hr class="separator" id="about">
+
+        <section class="about-me">
+          <div class="info">
+            <h2>About Me</h2>
+            <p class="pt-sans-regular">
+              I am a digital designer passionate about interactive, user-centered design and creative visual experiences such as video games and animations.  
+              With knowledge and experience in software from the Adobe Suite, Unity, Blender, Canva, and programming languages such as C#, JavaScript, among others.  
+              I'm also a developer with HTML and CSS, eager to learn new technologies and innovate projects.
+            </p>
+            <div class="social open-sans-extrabold">
+              <a href="https://www.behance.net/evelyncuen" target="_blank"><i class="fa-brands fa-behance"></i> Behance</a>
+              <a href="https://www.linkedin.com/in/evelyn-cuen-85008a340/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+              <a href="https://www.instagram.com/eveely.art/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            </div>
+          </div>
+          <div class="photo">
+            <img src="media/foto-evelyn-2.jpg" alt="Foto de perfil">
+          </div>
+      </section>
+    </div>
+    <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025. Web site developed by Evelyn Cuen.</p>
+      <div class="footer-nav open-sans-extrabold">
+        <a href="#about" >About me</a>
+        <a href="#works">Works</a>
+      </div>
+    </div>
+  </footer>
+  <button id="btn-up" onclick="irArriba()"> <i class="fa-solid fa-arrow-up"></i> </button>
+</body>
+<script> 
+  // Mostrar contenido1 y activar el botón al cargar la página
+  document.addEventListener('DOMContentLoaded', function () {
+    const primerBoton = document.querySelector('.barra button');
+    mostrarContenido('contenido1', primerBoton);
+  });
+
+  function mostrarContenido(idMostrar, botonActivo = null) {
+  const contenidos = ['contenido1', 'contenido2', 'contenido3'];
+  const botones = document.querySelectorAll('.barra button');
+
+  // Mostrar solo el contenido correspondiente
+  contenidos.forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.style.display = id === idMostrar ? 'block' : 'none';
+  });
+
+  // Actualizar estado activo de los botones
+  botones.forEach(boton => boton.classList.remove('activo'));
+  if (botonActivo) botonActivo.classList.add('activo');
+}
+  //Abrir imagen en grande
+  function abrirModal(imagen) {
+    const modal = document.getElementById("modal");
+    const modalImg = document.getElementById("imgModal");
+    modal.style.display = "flex";
+    modalImg.src = imagen.src;
+  }
+
+  //Cerrar modal
+  function cerrarModal() {
+    document.getElementById("modal").style.display = "none";
+  }
+
+  // Mostrar u ocultar el botón según el scroll
+  window.onscroll = function () {
+    const btn = document.getElementById("btn-up");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+
+  // Función para volver arriba
+  function irArriba() {
+    window.scrollTo({
+      top: 0,
+    });
+  }
+</script>
+</html>
