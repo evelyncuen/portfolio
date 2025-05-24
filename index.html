@@ -252,13 +252,13 @@
 <script> 
   // Mostrar contenido1 y activar el botón al cargar la página
   document.addEventListener('DOMContentLoaded', function () {
-    const primerBoton = document.querySelector('.barra button');
+    const primerBoton = document.querySelector('.bar button');
     mostrarContenido('contenido1', primerBoton);
   });
 
   function mostrarContenido(idMostrar, botonActivo = null) {
   const contenidos = ['contenido1', 'contenido2', 'contenido3'];
-  const botones = document.querySelectorAll('.barra button');
+  const botones = document.querySelectorAll('.bar button');
 
   // Mostrar solo el contenido correspondiente
   contenidos.forEach(id => {
